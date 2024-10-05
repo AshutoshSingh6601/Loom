@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#gradient{
+    background: transparent;
+    box-shadow: inset -200px 0px 109px -85px #463524, inset 200px 0px 109px -85px #463524;
+    padding: 20px 20px;
+}
+
+#combtn{
+    /* transition: position .9s ease-in-out; */
+    /* transition: top .9s ease-in-out, left .9s ease-in-out, bottom .9s ease-in-out, right .9s ease-in-out; */
+
+}
+
+#combtn::after{
+    content: '';
+    border: 1px solid white;
+    padding: 1.4rem 6.3rem;
+    z-index: -1;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    transition: top 2s ease-in-out, left 2s ease-in-out;
+    /* transition: top .9s ease-in-out, left .9s ease-in-out, bottom .9s ease-in-out, right .9s ease-in-out; */
+
+}
+
+#combtn:hover::after{
+    right: -8px;
+    bottom: -8px;
+    top: unset;
+    left: unset;
+    /* transition: all 1s ease; */
+}
+
+body{
+    background-color: #f6f5f0;
+}
+
+.img1{
+    background-image: url('https://dt-glamora.myshopify.com/cdn/shop/files/shop-5-2.jpg?v=1693992540&width=533');
+    width: 300px;
+    height: 300px;
+    transition: background-image 0.6s ease;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img1:hover{
+ background-image: url('https://dt-glamora.myshopify.com/cdn/shop/files/shop-5-1.jpg?v=1693992540&width=533');
+ cursor: pointer;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.card .hover-image, .card .add-to-cart{
+    opacity: 0;
+}
+
+.card .add-to-cart{
+    bottom: -20px;
+    transition: opacity 0.5s ease;
+}
+
+.card:hover .hover-image {
+    opacity: 1;
+}
+.card:hover .add-to-cart {
+    opacity: 1;
+    bottom: 0;
+}
+
+.card:hover .main-image {
+    opacity: 0;
+}
