@@ -5,6 +5,8 @@ import Hero from './Hero'
 import Footer from './Footer'
 import Offer from './Offer'
 import Carts from './Carts'
+import Experince from './Experience'
+import Categories from './Categories'
 
 const Home = () => {
   return (
@@ -12,9 +14,11 @@ const Home = () => {
         <ImpAterts />
         <Navbar />
         <Hero />
-        <Footer />
+        <Experince />
         <Offer />
-        <Carts />
+        <Categories />
+        {/* <Carts /> */}
+        <Footer />
     </div>
   )
 }
