@@ -82,8 +82,7 @@ const heroRightTop = {
                     {content.swiperContent2}
                   </span>
                   <button
-                    id="combtn"
-                    className="uppercase bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
+                    className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                   >
                     {content.swiperButton}
                   </button>
@@ -105,8 +104,7 @@ const heroRightTop = {
                     {heroRightTop.Content}
                     </p>
                     <button
-                        id="combtn"
-                        className="uppercase bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
+                        className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                     >
                         {heroRightTop.Button}
                     </button>

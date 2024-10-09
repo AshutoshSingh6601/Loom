@@ -1,24 +1,22 @@
 import React from 'react'
 import ImpAterts from './ImpAterts'
-import Navbar from './Navbar'
 import Hero from './Hero'
-import Footer from './Footer'
 import Offer from './Offer'
-import Carts from './Carts'
 import Experince from './Experience'
 import Categories from './Categories'
+import DetailInfo from './DetailInfo'
+import BgImage from './BgImage'
 
 const Home = () => {
   return (
     <div>
-        <ImpAterts />
-        <Navbar />
         <Hero />
         <Experince />
+        <BgImage />
         <Offer />
         <Categories />
-        {/* <Carts /> */}
-        <Footer />
+        <DetailInfo />
+        
     </div>
   )
 }

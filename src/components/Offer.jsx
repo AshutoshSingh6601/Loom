@@ -11,7 +11,7 @@ const Offer = () => {
   return (
     <>
     {
-    <div className='md:flex w-full md:h-screen md:mt-5'>
+    <div className='md:flex w-full md:h-screen'>
         <div className="w-full h-full">
             <img src={OfferContent.image} className='h-full w-full object-cover object-center' alt="" />
         </div>

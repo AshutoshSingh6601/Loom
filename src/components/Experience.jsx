@@ -41,7 +41,7 @@ const Experince = () => {
 
   return (
     <>
-     <div className="text-center mt-10">
+     <div className="text-center mt-10  md:mb-5">
 
         <h2 className='text-xl'>Experienced Sewers</h2>
         <p>Select your sewers</p>

@@ -9,7 +9,7 @@
     padding: 20px 20px;
 }
 
-#combtn::after{
+.combtn::after{
     content: '';
     border: 1px solid white;
     padding: 1.4rem 6.3rem;
@@ -22,7 +22,7 @@
 
 }
 
-#combtn:hover::after{
+.combtn:hover::after{
     right: -8px;
     bottom: -8px;
     top: unset;
