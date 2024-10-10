@@ -3,7 +3,7 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 import { GoHeart } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -49,7 +49,7 @@ const Navbar = ({setShowNav}) => {
           <ul className='hidden md:flex gap-6 text-sm'>
             {
               NavLinks.map((link)=>
-                <Link key={link.id} to={link.link}> <li className='uppercase tracking-widest cursor-pointer hover:text-[#cd865c]'>{link.name}</li> </Link>
+                <NavLink key={link.id} to={link.link}> <li className='uppercase tracking-widest cursor-pointer hover:text-[#cd865c]'>{link.name}</li> </NavLink>
               )
             }
           </ul>

@@ -10,7 +10,7 @@ const Footer = () => {
        <div className="md:flex items-center justify-between mb-10">
         <div className="w-full px-10 mb-10 md:mb-0">
           <img src='https://dt-glamora.myshopify.com/cdn/shop/files/Group_123935.png?v=1690449034&width=200' alt="" className='invert mb-10' />
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias pariatur quisquam dignissimos, ipsam velit sequi est ea voluptatem aliquid veritatis?</p>
+          <p>Thank you for choosing Loom, for your custom sewing needs. We are dedicated to providing high-quality clothing tailored to your style and delivered right to your doorstep. Connect with us on social media and stay updated on our latest offerings. Your satisfaction is our priority, and we look forward to bringing your fashion visions to life.</p>
         </div>
         <div className="w-full px-10 mb-10 md:mb-0">
           <h2 className='text-xl uppercase mb-5'>Customer Services</h2>

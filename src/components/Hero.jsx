@@ -12,46 +12,49 @@ const Hero = () => {
   const heroContens = [
     {
       swiperImg: heroLeft1,
-      swiperHeader1: "Save Upto $200",
-      swiperContent1: "Classy & Light Weight",
-      swiperHeader2: "5%",
-      swiperContent2: "Match's Significant Sentimental Value ",
-      swiperButton: "Discover Now",
+      swiperHeader1: "Embrace Elegance with Our Ethnic Collection",
+      swiperContent1: "Stunning Collections",
+      swiperHeader2: "25-30% OFF",
+      swiperContent2: "STYLE YOUR CLOTHES IN INDIAN WAY",
+      motive: "Step into Style, Step into Tradition",
+      swiperButton: "EXPLORE NOW",
     },
     {
       swiperImg: heroLeft2,
-      swiperHeader1: "Save Upto $200",
-      swiperContent1: "",
-      swiperHeader2: "",
-      swiperContent2: "",
-      swiperButton: "",
+      swiperHeader1: "Modern Trends, Custom Fit",
+      swiperContent1: "Excellent Style",
+      swiperHeader2: "25-30% OFF",
+      swiperContent2: "STYLE YOUR CLOTHES IN WESTERN WAY",
+      motive: "Fashion That Tells Your Story",
+      swiperButton: "EXPLORE NOW",
     },
     {
         swiperImg: heroLeft3,
-        swiperHeader1: "",
-        swiperContent1: "",
-        swiperHeader2: "",
-        swiperContent2: "",
-        swiperButton: "",
+        swiperHeader1: "From Festive to Everyday, Style Your Way",
+        swiperContent1: "Now at your doorstep Just call once and, You'll be in our FAMILY",
+        swiperHeader2: "25-30% OFF",
+        swiperContent2: "STYLE YOUR CLOTHES IN YOUR WAY",
+        motive: "Style Your Way",
+        swiperButton: "EXPLORE NOW",
     },
 ];
 
 const heroRightTop = {
     Image: heroRightTopImage,
-    Content: " 20% Offer Glorious Jewellery",
-    Button: "Shop Now",
+    Content: "Add some Indian touch In your wardrobe",
+    Button: "EXPLORE NOW",
   }
   
   const heroRightBottom = {
       Image: heroRightBottomImage,
-      Content: "20% Offer Glorious Jewellery",
-      Button: "Shop Now",
+      Content: "Let's Glam in a WESTERN WAY",
+      Button: "EXPLORE NOW",
     }
 
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 md:h-screen pb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:h-screen pb-6">
         <div className="w-full h-screen">
           <Swiper
             className="mySwiper h-full w-full"
@@ -70,16 +73,19 @@ const heroRightTop = {
                   className="w-full h-full object-center object-cover brightness-[.9]"
                   alt=""
                 />
-                <div className="absolute top-0 left-0 z-10 text-left w-1/2 m-20 ">
-                  <span className="text-7xl">{content.swiperHeader1} </span>
-                  <span className="text-white block mt-8 mb-16 text-xl">
+                <div className="absolute top-0 left-0 z-10 text-left 2 m-10 xs:m-20 ">
+                  <span className="text-5xl  xs:w-2/3 block">{content.swiperHeader1} </span>
+                  <span className="text-white block mt-8 text-xl">
                     {content.swiperContent1}
                   </span>
-                  <span className="text-7xl block mb-5">
+                  <span className="text-5xl xs:text-7xl block my-10">
                     {content.swiperHeader2}
                   </span>
                   <span className="text-white block text-2xl">
                     {content.swiperContent2}
+                  </span>
+                  <span className="text-white block text-xl py-10">
+                    {content.motive}
                   </span>
                   <button
                     className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
@@ -91,7 +97,7 @@ const heroRightTop = {
             ))}
           </Swiper>
         </div>
-        <div className="grid grid-rows-2 md:gap-5 w-full h-screen">
+        <div className="grid grid-rows-2 gap-5 w-full h-screen">
             {
                 <div className="top w-full relative">
                     <img
@@ -99,8 +105,8 @@ const heroRightTop = {
                     className="w-full h-full object-center object-cover "
                     alt=""
                     />
-                    <div className="absolute z-10 top-[25%] right-[40px]">
-                    <p className="text-5xl text-end">
+                    <div className="absolute z-10 top-[25%] right-[40px] w-2/3 text-end">
+                    <p className="text-3xl xs:text-5xl text-end ">
                     {heroRightTop.Content}
                     </p>
                     <button
@@ -119,6 +125,16 @@ const heroRightTop = {
                     className="w-full h-full object-center object-cover"
                     alt=""
                     />
+                    <div className="absolute z-10 top-[25%] right-[40px] w-2/3 text-end">
+                    <p className="text-3xl xs:text-5xl text-end ">
+                    {heroRightTop.Content}
+                    </p>
+                    <button
+                        className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
+                    >
+                        {heroRightTop.Button}
+                    </button>
+                    </div>
                 </div>
             }
         </div>

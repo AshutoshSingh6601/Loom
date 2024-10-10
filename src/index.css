@@ -33,3 +33,12 @@
 body{
     background-color: #f6f5f0;
 }
+
+.active{
+    color: #cd865c;
+}
+
+::selection{
+    background: #e5964bcc;
+    color: rgb(26, 24, 24);
+}

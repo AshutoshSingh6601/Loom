@@ -3,6 +3,10 @@ import vendor1 from '../assets/Images/Vendor1.jpeg'
 import vendorPro1 from '../assets/Images/VerndorPro1.jpeg'
 import vendorPro2 from '../assets/Images/VerndorPro2.jpeg'
 import vendorPro3 from '../assets/Images/VerndorPro3.jpeg'
+import Men2 from "../assets/Images/Men2.jpeg";
+import Men9 from "../assets/Images/Men9.jpeg";
+import Men10 from "../assets/Images/Men10.jpeg";
+import Men13 from "../assets/Images/Men13.jpeg";
 
 const Experince = () => {
 
@@ -28,12 +32,22 @@ const Experince = () => {
             exp: '5' 
         },
         {
-            Image: vendor1,
+            Image: Men10,
             name: 'Ashutosh',
             exp: '5' 
         },
         {
-            Image: vendor1,
+            Image: Men9,
+            name: 'Ashutosh',
+            exp: '5'
+        },
+        {
+            Image: Men2,
+            name: 'Ashutosh',
+            exp: '5' 
+        },
+        {
+            Image: Men13,
             name: 'Ashutosh',
             exp: '5'
         },
@@ -43,8 +57,8 @@ const Experince = () => {
     <>
      <div className="text-center mt-10  md:mb-5">
 
-        <h2 className='text-xl'>Experienced Sewers</h2>
-        <p>Select your sewers</p>
+        <h2 className='text-5xl text-[#cd865c] font-["Italiana"]'>Experienced Sewers</h2>
+        <p className='w-2/3 mx-auto py-5'>At Loom, we pride ourselves on our extensive experience in the world of sewing. With years of passion and expertise behind us, we understand the intricacies of fabric, design, and technique. Our team of skilled sewists is dedicated to sharing this knowledge with you, offering guidance and support as you embark on your fashion style.</p>
 
          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-10/12 mx-auto my-5">
         {
