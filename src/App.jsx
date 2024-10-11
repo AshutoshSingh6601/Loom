@@ -7,19 +7,26 @@ import Navbar from "./components/Navbar";
 import SSNav from "./components/SSNav";
 import AboutUs from "./components/AboutUs";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Design from "./components/Design";
+import Contact from "./components/Contact";
+import Register from "./components/Register";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
+  const [register, setRegister] = useState(false)
 
   return (
     <>
       <BrowserRouter>
         {showNav && <SSNav setShowNav={setShowNav} />}
+        <Register register={register} setRegister={setRegister} />
         <ImpAterts />
-        <Navbar setShowNav={setShowNav} />
+        <Navbar setShowNav={setShowNav} setRegister={setRegister} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home register={register} setRegister={setRegister} />} />
+          <Route path="/design" element={<Design />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
 
         <Footer />

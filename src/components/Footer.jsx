@@ -8,11 +8,11 @@ const Footer = () => {
        {/* ===============section 1==============  */}
 
        <div className="md:flex items-center justify-between mb-10">
-        <div className="w-full px-10 mb-10 md:mb-0">
+        <div className="w-full xs:px-10 mb-10 md:mb-0">
           <img src='https://dt-glamora.myshopify.com/cdn/shop/files/Group_123935.png?v=1690449034&width=200' alt="" className='invert mb-10' />
-          <p>Thank you for choosing Loom, for your custom sewing needs. We are dedicated to providing high-quality clothing tailored to your style and delivered right to your doorstep. Connect with us on social media and stay updated on our latest offerings. Your satisfaction is our priority, and we look forward to bringing your fashion visions to life.</p>
+          <p>Thank you for choosing Loom, for your custom sewing needs. We are dedicated to providing high-quality clothing tailored to your style and delivered right to your doorstep. <span className='hidden xs:inline'>Connect with us on social media and stay updated on our latest offerings. Your satisfaction is our priority, and we look forward to bringing your fashion visions to life.</span> </p>
         </div>
-        <div className="w-full px-10 mb-10 md:mb-0">
+        <div className="w-full xs:px-10 mb-10 md:mb-0">
           <h2 className='text-xl uppercase mb-5'>Customer Services</h2>
           <ul>
             <li className='mb-3'>Contact Us</li>
@@ -21,7 +21,7 @@ const Footer = () => {
             <li className='mb-3'>Our Products</li>
           </ul>
         </div>
-        <div className="w-full px-10 mb-10 md:mb-0">
+        <div className="w-full xs:px-10 mb-10 md:mb-0">
           <h2 className='text-xl uppercase mb-5'>Company</h2>
           <ul>
             <li className='mb-3'>Terms & Conditions </li>
@@ -34,12 +34,12 @@ const Footer = () => {
 
       <hr className='pt-10' />
 
-      <div className="xs:flex items-center justify-between">
+      <div className="xs:flex items-center justify-between xs:text-base text-xs">
 
       <p>&copy; Guddi Ashutosh Singh </p>
 
       <div className="">
-        <ul className='flex gap-5'>
+        <ul className='xs:flex mt-3 xs:mt-0 gap-5 '>
           <li>Privacy Policy</li>
           <li>Terms & Conditions</li>
           <li>Contact</li>

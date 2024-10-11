@@ -1,0 +1,33 @@
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div className='my-20 xs:flex w-11/12 xs:w-10/12 mx-auto'>
+        <div className="w-full">
+            <p>kdjbjf</p>
+        </div>
+        <div className=" bg-[#DBB594] xs:p-10 p-3 mt-5 xs:mt-0 rounded-lg xs:rounded-2xl w-full text-gray-800">
+            <form action="">
+                <div className="flex flex-col gap-1">
+                    <label className='ms-1' htmlFor="name">Name</label>
+                    <input type="text" placeholder='Enter your name' id='name' name='name' className='p-2 rounded-lg outline-none' />
+                </div>
+                <div className="flex flex-col my-5 gap-1">
+                    <label className='ms-1' htmlFor="email">Email</label>
+                    <input type="email" placeholder='Enter your email' id='email' name='email' className='p-2 rounded-lg outline-none' />
+                </div>
+                <div className="flex flex-col gap-1">
+                    <label className='ms-1' htmlFor="reason">Reason</label>
+                    <textarea name="reason" id="reason" rows={3} placeholder='Enter your reason...' className='p-2 rounded-lg outline-none'></textarea>
+                </div>
+                <div className="text-end">
+                <button className='bg-[#F2E1CA] mt-5 py-1 px-3 rounded hover:bg-[#f1dab8] border border-[#ca9e61b2]'>Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+  )
+}
+
+export default Contact

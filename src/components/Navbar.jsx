@@ -7,7 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 
-const Navbar = ({setShowNav}) => {
+const Navbar = ({setShowNav, setRegister}) => {
 
   const NavLinks = [
     {
@@ -35,16 +35,25 @@ const Navbar = ({setShowNav}) => {
       name: 'About Us',
       link: 'about'
     },
+    {
+      id: 6,
+      name: 'Contact Us',
+      link: 'contact'
+    },
   ]
 
   const handleNav = () =>{
     setShowNav(true)
   }
 
+  const handleRegister = () =>{
+    setRegister(true)
+  }
+
   return (
     <div>
       
-      <div className="flex items-center py-5 justify-between px-5 gap-5 md:px-20">
+      <div className="flex items-center py-5 justify-between px-5 gap-5 md:px-20 shadow-[0_1px_1px_0px_rgba(0,0,0,0.3)] shadow-[#cd865c] xs:shadow-none">
         {/* <div className="left"> */}
           <ul className='hidden md:flex gap-6 text-sm'>
             {
@@ -58,7 +67,7 @@ const Navbar = ({setShowNav}) => {
           <img src="https://dt-glamora.myshopify.com/cdn/shop/files/Group_123935.png?v=1690449034&width=200" className='w-20 sm:w-auto' alt="" />
         </div>
         <div className="flex gap-6 items-center justify-center">
-          <AiOutlineUserAdd className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
+          <AiOutlineUserAdd onClick={handleRegister} className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
           <GoHeart className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
           <FiShoppingCart className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
           <RxHamburgerMenu onClick={handleNav} className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c] cursor-pointer md:hidden' />

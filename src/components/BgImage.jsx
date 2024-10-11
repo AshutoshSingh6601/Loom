@@ -11,7 +11,7 @@ const BgImage = () => {
       <div className="absolute bg-[#0000008c] z-10 w-full h-full "></div>
 
 <div className="z-30">
-      <div className="">
+      <div className="z-30">
             <p className="text-2xl sm:text-5xl z-30 text-[#e77b3c] font-['Italiana'] text-center py-10">
               DAZZLING WAY TO STYLE YOURSELF
             </p>

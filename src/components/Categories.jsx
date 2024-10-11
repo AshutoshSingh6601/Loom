@@ -229,17 +229,17 @@ const Categories = () => {
   const Categories = [
     {
       id: 1,
-      name: "Women",
+      name: "Womens",
       uni: 'aurat'
     },
     {
       id: 2,
-      name: "Men",
+      name: "Mens",
       uni: 'Admin'
     },
     {
       id: 3,
-      name: "Child",
+      name: "Kids",
       uni: 'bache'
     },
     // {
@@ -250,18 +250,26 @@ const Categories = () => {
   ];
 
   const [categoriesData, setCategoriesData] = useState([]);
-  const activeClass = useRef();
+  const activeClass = useRef('aurat');
+
+  setTimeout(() => {
+    
+    setCategoriesData(
+      vendorDetails.filter((category) =>
+        category.uni.toLowerCase().includes(activeClass.current.toLowerCase())
+      )
+    );
+  }, );
 
   const handleCategory = (id) => {
     activeClass.current = id
     setCategoriesData(
       vendorDetails.filter((category) =>
-        category.uni.toLowerCase().match(id.toLowerCase())
+        category.uni.toLowerCase().includes(id.toLowerCase())
       )
     );
   };
 
-  // console.log(activeClass)
 
   return (
     <>
@@ -269,7 +277,7 @@ const Categories = () => {
         <h2 className="text-5xl text-[#cd865c] font-['Italiana']">Design And Styles</h2>
         <p className="w-2/3 mx-auto py-3">Welcome to Loom, where your sewing journey begins! We’re excited to help you explore a vibrant array of clothing designs and styles. As you navigate our collection, you'll discover everything from casual pieces to elegant attire, perfect for any occasion.</p>
         <div className="mx-auto w-10/12">
-          <div className="flex gap-2 md:gap-10 items-center justify-center my-10">
+          <div className="flex gap-5 md:gap-10 items-center justify-center my-10">
             {Categories.map((category) => (
               <button
                 key={category.id}
@@ -300,8 +308,8 @@ const Categories = () => {
                     </div>
                   </div>
                 ))
-              : vendorDetails.map((vendor) => (
-                  <div key={vendor.id} className="w-full">
+              : vendorDetails.map((vendor, i) => (
+                  <div key={i} className="w-full">
                     <img
                       src={vendor.Image}
                       alt=""

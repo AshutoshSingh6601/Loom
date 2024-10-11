@@ -74,11 +74,11 @@ const heroRightTop = {
                   alt=""
                 />
                 <div className="absolute top-0 left-0 z-10 text-left 2 m-10 xs:m-20 ">
-                  <span className="text-5xl  xs:w-2/3 block">{content.swiperHeader1} </span>
+                  <span className="text-5xl  xs:w-2/3 block font-['Italiana']">{content.swiperHeader1} </span>
                   <span className="text-white block mt-8 text-xl">
                     {content.swiperContent1}
                   </span>
-                  <span className="text-5xl xs:text-7xl block my-10">
+                  <span className="text-5xl xs:text-7xl block my-10 font-['Italiana']">
                     {content.swiperHeader2}
                   </span>
                   <span className="text-white block text-2xl">
@@ -100,13 +100,14 @@ const heroRightTop = {
         <div className="grid grid-rows-2 gap-5 w-full h-screen">
             {
                 <div className="top w-full relative">
+                  <div className="absolute bg-[#00000062] -z-0 w-full h-full"></div>
                     <img
                     src={heroRightTop.Image}
                     className="w-full h-full object-center object-cover "
                     alt=""
                     />
                     <div className="absolute z-10 top-[25%] right-[40px] w-2/3 text-end">
-                    <p className="text-3xl xs:text-5xl text-end ">
+                    <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50">
                     {heroRightTop.Content}
                     </p>
                     <button
@@ -120,13 +121,14 @@ const heroRightTop = {
             {
 
                 <div className="bottom w-full relative">
+                  <div className="absolute bg-[#00000062] -z-0 w-full h-full"></div>
                     <img
                     src={heroRightBottom.Image}
                     className="w-full h-full object-center object-cover"
                     alt=""
                     />
                     <div className="absolute z-10 top-[25%] right-[40px] w-2/3 text-end">
-                    <p className="text-3xl xs:text-5xl text-end ">
+                    <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50 z-10">
                     {heroRightTop.Content}
                     </p>
                     <button
