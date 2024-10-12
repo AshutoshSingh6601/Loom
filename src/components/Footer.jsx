@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import logo from '../assets/Images/topLogo.jpeg'
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
 
        <div className="md:flex items-center justify-between mb-10">
         <div className="w-full xs:px-10 mb-10 md:mb-0">
-          <img src='https://dt-glamora.myshopify.com/cdn/shop/files/Group_123935.png?v=1690449034&width=200' alt="" className='invert mb-10' />
+        <Link to='/' ><h1 className='font-Dancing font-bold text-4xl md:text-6xl mb-3'>Loom</h1></Link>
           <p>Thank you for choosing Loom, for your custom sewing needs. We are dedicated to providing high-quality clothing tailored to your style and delivered right to your doorstep. <span className='hidden xs:inline'>Connect with us on social media and stay updated on our latest offerings. Your satisfaction is our priority, and we look forward to bringing your fashion visions to life.</span> </p>
         </div>
         <div className="w-full xs:px-10 mb-10 md:mb-0">
@@ -36,7 +37,7 @@ const Footer = () => {
 
       <div className="xs:flex items-center justify-between xs:text-base text-xs">
 
-      <p>&copy; Guddi Ashutosh Singh </p>
+      <p>&copy; Guddi Sahu </p>
 
       <div className="">
         <ul className='xs:flex mt-3 xs:mt-0 gap-5 '>

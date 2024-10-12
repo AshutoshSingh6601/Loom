@@ -14,7 +14,11 @@ export default {
       },
       screens: {
         'xs': '450px'
+      },
+      fontFamily: {
+        'Dancing': ["Dancing Script", ],
       }
+  
     },
   },
   plugins: [],

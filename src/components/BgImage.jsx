@@ -1,5 +1,6 @@
 import React from "react";
 import Attached from "../assets/Images/Attached.jpg";
+import { Link } from "react-router-dom";
 
 const BgImage = () => {
   return (
@@ -46,12 +47,12 @@ const BgImage = () => {
 
 <div className="text-center text-gray-50 flex flex-col items-center justify-center pt-20  gap-10">
   <div className="flex gap-5 sm:gap-20">
-      <button onClick={()=>console.log("EXPLORE NOW button.......")} className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 z-30">EXPLORE NOW</button>
+      <Link to='/design' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">EXPLORE NOW</button></Link>
 
-      <button className="bg-[#f1d9b7] cursor-pointer py-1 z-30 rounded border border-[#5b5957bc] text-gray-800 w-40">ORDER NOW</button>
+      <Link to='/design' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40">ORDER NOW</button></Link>
   </div>
 
-      <button className="bg-[#f1d9b7] cursor-pointer z-30 py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">CALL US</button>
+      <Link to='/contact' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">CALL US</button></Link>
 </div>
         
 

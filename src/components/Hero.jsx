@@ -4,9 +4,10 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import heroLeft1 from '../assets/Images/heroLeft1.jpeg'
 import heroLeft2 from '../assets/Images/heroLeft2.jpeg'
-import heroLeft3 from '../assets/Images/heroLeft3.jpeg'
+import heroLeft3 from '../assets/Images/heroLeft3.jpg'
 import heroRightTopImage from '../assets/Images/heroRightTop.jpeg'
 import heroRightBottomImage from '../assets/Images/heroRightBottom.jpg'
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const heroContens = [
@@ -87,11 +88,11 @@ const heroRightTop = {
                   <span className="text-white block text-xl py-10">
                     {content.motive}
                   </span>
-                  <button
+                  <Link to='/design'><button
                     className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                   >
                     {content.swiperButton}
-                  </button>
+                  </button></Link>
                 </div>
               </SwiperSlide>
             ))}
@@ -110,11 +111,11 @@ const heroRightTop = {
                     <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50">
                     {heroRightTop.Content}
                     </p>
-                    <button
+                    <Link to='/design'><button
                         className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                     >
                         {heroRightTop.Button}
-                    </button>
+                    </button></Link>
                     </div>
                 </div>
             }
@@ -131,11 +132,11 @@ const heroRightTop = {
                     <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50 z-10">
                     {heroRightTop.Content}
                     </p>
-                    <button
+                    <Link to='/design'><button
                         className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                     >
                         {heroRightTop.Button}
-                    </button>
+                    </button></Link>
                     </div>
                 </div>
             }

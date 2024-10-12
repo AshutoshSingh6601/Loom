@@ -39,180 +39,181 @@ import BabyBoy5 from "../assets/Images/BabyBoy5.jpeg";
 
 
 const Design = () => {
-
+  
     const vendorDetails = [
         {
           Image: Girl1,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Kurti Set",
+          uni: 'aurat',
         },
         {
           Image: Girl2,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Sharara Set ",
+          uni: 'aurat',
         },
         {
           Image: Girl3,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Gown ",
+          uni: 'aurat',
         },
         {
           Image: Girl4,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Short Kurti",
+          uni: 'aurat',
         },
         {
           Image: Girl5,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Styled Lehenga ",
+          uni: 'aurat',
         },
         {
           Image: Girl6,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Red sharara",
+          uni: 'aurat',
         },
         {
           Image: Girl7,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Red gown full",
+          uni: 'aurat',
         },
         {
           Image: Girl8,
           name: "Women cloths",
-          uni: 'aurat'
+          uni: 'aurat',
         },
         {
           Image: Girl9,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "One piece full Gown",
+          uni: 'aurat',
         },
         {
           Image: Girl10,
-          name: "Women cloths",
-          uni: 'aurat'
+          name: "Red Indian Co-ord set ",
+          uni: 'aurat',
         },
         {
           Image: Men1,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Golden styled Kurta Set",
+          uni: 'Admin',
         },
         {
           Image: Men2,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens Formal Set",
+          uni: 'Admin',
         },
         {
           Image: Men3,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Wedding attire Black Blazer",
+          uni: 'Admin',
         },
         {
           Image: Men4,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Kurta with jacket ",
+          uni: 'Admin',
         },
         {
           Image: Men5,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Sherwani ",
+          uni: 'Admin',
         },
         {
           Image: Men6,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens casual Full shirt",
+          uni: 'Admin',
         },
         {
           Image: Men7,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens Formal",
+          uni: 'Admin',
         },
         {
           Image: Men8,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens Co-ord set",
+          uni: 'Admin',
         },
         {
           Image: Men9,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens casual kurta",
+          uni: 'Admin',
         },
         {
           Image: Men10,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens Genz fashion ",
+          uni: 'Admin',
         },
         {
           Image: Men11,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens wedding sherwani with shawl",
+          uni: 'Admin',
         },
         {
           Image: Men12,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens kurta",
+          uni: 'Admin',
         },
         {
           Image: Men13,
-          name: "Men cloths",
-          uni: 'Admin'
+          name: "Mens Formal and Casual Blazer",
+          uni: 'Admin',
         },
         {
           Image: BabyGirl1,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Lehenga",
+          uni: 'bache',
         },
         {
           Image: BabyGirl2,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Two Piece Set",
+          uni: 'bache',
         },
         {
           Image: BabyGirl3,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Party Wear",
+          uni: 'bache',
         },
         {
           Image: BabyGirl4,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kida Traditional Kurta Set",
+          uni: 'bache',
         },
         {
           Image: BabyGirl5,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Net Gown",
+          uni: 'bache',
         },
         {
           Image: BabyGirl6,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Frock",
+          uni: 'bache',
         },
         {
           Image: BabyBoy1,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Sherwani ",
+          uni: 'bache',
         },
         {
           Image: BabyBoy2,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Formal Set",
+          uni: 'bache',
         },
         {
           Image: BabyBoy3,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Casual Shirt",
+          uni: 'bache',
         },
         {
           Image: BabyBoy4,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Traditional Kurta Set",
+          uni: 'bache',
         },
         {
           Image: BabyBoy5,
-          name: "Child cloths",
-          uni: 'bache'
+          name: "Kids Blazer",
+          uni: 'bache',
         },
       ];
-    
+      
+      
       const Categories = [
         {
           id: 1,
@@ -276,15 +277,17 @@ const Design = () => {
                         className="w-full h-full  hover:scale-105 transition-all duration-700 object-cover object-left-top rounded"
                       />
                     </div>
-                    <div className="text-left ps-3 mb-5">
+                    <div className="text-left mt-3 mb-5">
                       <p>
-                        <span className="font-bold">Name: </span> {vendor.name}
+                        <span className="font-bold">Name: </span> {vendor.name}<br/>
+                        {/* <span className="font-bold">Price: </span> ₹ {vendor.price} */}
                       </p>
+                      <button className='bg-[#f1d9b7] border border-[#5b5957bc] px-2 rounded mt-2'>Order now</button>
                     </div>
                   </div>
                 ))
-              : vendorDetails.map((vendor) => (
-                  <div key={vendor.id} className="w-full">
+              : vendorDetails.map((vendor, i) => (
+                  <div key={i} className="w-full">
                    <div className="h-[20rem] w-full border sm:h-h-[20rem] sm:w-full overflow-hidden rounded">
                       <img
                         src={vendor.Image}
@@ -292,15 +295,18 @@ const Design = () => {
                         className="w-full h-full hover:scale-105 transition-all duration-700 object-cover object-left-top rounded"
                       />
                     </div>
-                    <div className="text-left ps-3 mb-5">
+                    <div className="text-left mt-3 mb-5">
                       <p>
-                        <span className="font-bold">Name: </span> {vendor.name}
+                        <span className="font-bold">Name: </span> {vendor.name}<br/>
+                        {/* <span className="font-bold">Price: </span> ₹ {vendor.price} */}
                       </p>
+                      <button className='bg-[#f1d9b7] border border-[#5b5957bc] px-2 rounded mt-2'>Order now</button>
                     </div>
                   </div>
                 ))}
           </div>
         </div>
+          <p className='pb-10'> <span className='text-red-700 text-xl'>Note </span>  :   Customizable clothes and price call us for booking now.</p>
       </div>
     </div>
   )

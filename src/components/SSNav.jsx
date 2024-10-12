@@ -4,33 +4,33 @@ import { Link } from 'react-router-dom';
 
 const SSNav = ({setShowNav}) => {
 
-    const NavLinks = [
-        {
-          id: 1,
-          name: 'Home',
-          link: '/'
-        },
-        {
-          id: 2,
-          name: 'Design',
-          link: 'design'
-        },
-        {
-          id: 3,
-          name: 'Sewers',
-          link: 'sewers'
-        },
-        {
-          id: 4,
-          name: 'Blog',
-          link: 'blog'
-        },
-        {
-          id: 5,
-          name: 'About Us',
-          link: 'about'
-        },
-      ]
+  const NavLinks = [
+    {
+      id: 1,
+      name: 'Home',
+      link: '/'
+    },
+    {
+      id: 2,
+      name: 'Design',
+      link: 'design'
+    },
+    {
+      id: 3,
+      name: 'Sewers',
+      link: 'sewers'
+    },
+    {
+      id: 4,
+      name: 'About Us',
+      link: 'about'
+    },
+    {
+      id: 5,
+      name: 'Contact Us',
+      link: 'contact'
+    },
+  ]
 
       const handleNav = () =>{
         setShowNav(false)

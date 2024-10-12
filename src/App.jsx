@@ -10,6 +10,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Design from "./components/Design";
 import Contact from "./components/Contact";
 import Register from "./components/Register";
+import NotFound from "./components/NotFound";
+import Experince from "./components/Experience";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -27,6 +29,8 @@ function App() {
           <Route path="/design" element={<Design />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/sewers" element={<Experince />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />

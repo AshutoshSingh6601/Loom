@@ -1,5 +1,6 @@
 import React from 'react'
 import offerImg from '../assets/Images/offerImg.jpeg'
+import { Link } from 'react-router-dom'
 
 const Offer = () => {
 
@@ -16,11 +17,11 @@ const Offer = () => {
             <img src={OfferContent.image} className='h-full w-full object-cover object-center' alt="" />
         </div>
         <div className="w-full h-full bg-[#6e4d30] flex items-center justify-center px-2 md:px-10 py-8">
-            <p className=' w-full md:w-10/12 text-gray-50'>
+            <p className=' w-full md:w-11/12 text-gray-50 text-sm'>
             
             <span className='hidden md:block'>
 
-At Loom, we provide high-quality sewing services at affordable prices. Simply place your order by sharing your requirements, such as size, fabric type, and color, and we’ll take care of the rest. You don’t need to choose a design—we’ll work with you to create exactly what you need. Enjoy the convenience of having your custom pieces delivered right to your doorstep. Start your sewing journey with us today!
+At Loom, we provide high-quality sewing services at affordable prices. Simply place your order by sharing your requirements, such as size, fabric type, and color, and we’ll take care of the rest. Enjoy the convenience of having your custom pieces delivered right to your doorstep. Start your sewing journey with us today!
 <br/><br/>
             </span>
 Your stunning choices starting with prices...
@@ -46,7 +47,7 @@ We do take orders of men's, kids and senior citizens too....
 <br/><br/>
 Call for any queries and orders according to your location
 <br/><br/>
- <button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#5b5957bc] text-gray-800'>Order Now</button>
+ <Link to='/design'><button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#5b5957bc] text-gray-800'>Order Now</button></Link>
 
             </p>
         </div>

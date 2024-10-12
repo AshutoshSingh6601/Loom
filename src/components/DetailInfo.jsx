@@ -1,5 +1,6 @@
 import React from 'react'
 import offerImg from '../assets/Images/DetailInfo.jpeg'
+import { Link } from 'react-router-dom'
 
 const DetailInfo = () => {
     const OfferContent = {
@@ -27,7 +28,7 @@ GRAB OR GONE
 <br /><br />
 CALL now For any QUERY
 <br /><br />
-<button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#e1c89fad] text-gray-800'>CALL US</button>
+<Link to='/contact'><button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#e1c89fad] text-gray-800'>CALL US</button></Link>
 
                 </p>
             </div>
