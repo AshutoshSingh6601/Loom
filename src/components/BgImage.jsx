@@ -47,12 +47,12 @@ const BgImage = () => {
 
 <div className="text-center text-gray-50 flex flex-col items-center justify-center pt-20  gap-10">
   <div className="flex gap-5 sm:gap-20">
-      <Link to='/design' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">EXPLORE NOW</button></Link>
+      <Link to='/design' className="z-50"><button onClick={()=>window.scrollTo(0, 0)} className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">EXPLORE NOW</button></Link>
 
-      <Link to='/design' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40">ORDER NOW</button></Link>
+      <Link to='/design' className="z-50"><button onClick={()=>window.scrollTo(0, 0)} className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40">ORDER NOW</button></Link>
   </div>
 
-      <Link to='/contact' className="z-50"><button className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">CALL US</button></Link>
+      <Link to='/contact' className="z-50"><button onClick={()=>window.scrollTo(0, 0)} className="bg-[#f1d9b7] cursor-pointer py-1 rounded border border-[#5b5957bc] text-gray-800 w-40 ">CALL US</button></Link>
 </div>
         
 

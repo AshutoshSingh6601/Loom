@@ -10,7 +10,7 @@ const Footer = () => {
 
        <div className="md:flex items-center justify-between mb-10">
         <div className="w-full xs:px-10 mb-10 md:mb-0">
-        <Link to='/' ><h1 className='font-Dancing font-bold text-4xl md:text-6xl mb-3'>Loom</h1></Link>
+        <Link to='/' onClick={()=>window.scrollTo(0, 0)} ><h1 className='font-Dancing font-bold text-4xl md:text-6xl mb-3'>Loom</h1></Link>
           <p>Thank you for choosing Loom, for your custom sewing needs. We are dedicated to providing high-quality clothing tailored to your style and delivered right to your doorstep. <span className='hidden xs:inline'>Connect with us on social media and stay updated on our latest offerings. Your satisfaction is our priority, and we look forward to bringing your fashion visions to life.</span> </p>
         </div>
         <div className="w-full xs:px-10 mb-10 md:mb-0">

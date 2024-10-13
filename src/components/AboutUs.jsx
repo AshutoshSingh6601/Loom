@@ -5,6 +5,7 @@ const AboutUs = () => {
   return (
     <div className=''>
         <div className="text-base text-justify xs:text-xl w-10/12 md:w-8/12 mx-auto leading-relaxed mt-5">
+        <h2 className='text-5xl text-[#cd865c] font-["Italiana"] text-center my-10'>About Loom</h2>
             <p>Welcome to our sewing and delivery service, where creativity meets convenience. At our core, we believe that every stitch tells a story, and we are passionate about transforming your fabric dreams into reality. Our journey began with a love for textiles and a desire to provide high-quality, personalized sewing solutions that cater to the unique needs of our community.
 <br/><br/>
 With a team of skilled artisans who have honed their craft over the years, we take pride in our attention to detail and commitment to excellence. Whether you’re looking for custom garments, home décor, or special occasion attire, we approach each project with enthusiasm and a meticulous eye, ensuring that your vision comes to life just as you imagined.

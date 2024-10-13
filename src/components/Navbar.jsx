@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { GoHeart } from "react-icons/go";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link, NavLink } from 'react-router-dom';
+import productContext from '../context/ProductContext';
 
 
 
 const Navbar = ({setShowNav, setRegister}) => {
+
+  const { cartData } = useContext(productContext)
 
   const NavLinks = [
     {
@@ -64,7 +67,12 @@ const Navbar = ({setShowNav, setRegister}) => {
         <div className="flex gap-6 items-center justify-end">
           <AiOutlineUserAdd onClick={handleRegister} className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
           {/* <GoHeart className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' /> */}
+          <Link to='/cart'>
+          <div className="relative">
           <FiShoppingCart className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c]' />
+            <span className='absolute -top-3   p-0 -right-2 flex px-1 text-xs items-center justify-center rounded-full bg-[#f1d9b7]'>{cartData.length}</span>
+          </div>
+          </Link>
           <RxHamburgerMenu onClick={handleNav} className='transition ease-in-out duration-300 hover:scale-110 hover:text-[#cd865c] cursor-pointer md:hidden' />
         </div>
 

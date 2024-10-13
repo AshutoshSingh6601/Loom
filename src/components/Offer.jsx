@@ -47,7 +47,7 @@ We do take orders of men's, kids and senior citizens too....
 <br/><br/>
 Call for any queries and orders according to your location
 <br/><br/>
- <Link to='/design'><button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#5b5957bc] text-gray-800'>Order Now</button></Link>
+ <Link to='/design'><button onClick={()=>window.scrollTo(0, 0)} className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#5b5957bc] text-gray-800'>Order Now</button></Link>
 
             </p>
         </div>

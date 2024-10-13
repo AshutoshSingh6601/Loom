@@ -4,8 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
-
-
+import Swal from 'sweetalert2';
 
 const Contact = () => {
     const apiKey = import.meta.env.VITE_API_KEY;
@@ -30,10 +29,25 @@ const Contact = () => {
     
         if (res.success) {
           console.log("Success", res);
+          Swal.fire({
+            title: res.data.name,
+            text: "Message sent successfully!",
+            icon: "success"
+          });
+          event.target.reset()
+        }
+        else{
+          Swal.fire({
+            title: "Cancelled",
+            text: res.message,
+            icon: "error"
+          });
         }
       };
 
   return (
+    <div className="">
+      <h2 className='text-5xl text-[#cd865c] font-["Italiana"] text-center my-10'>Contact Us</h2>
     <div className='my-20 xs:flex w-11/12 xs:w-10/12 mx-auto'>
         <div className="w-full xs:p-6 flex flex-col gap-3 md:gap-8">
             <div className="flex items-center gap-5">
@@ -85,6 +99,7 @@ const Contact = () => {
             </form>
         </div>
         
+    </div>
     </div>
   )
 }

@@ -88,7 +88,7 @@ const heroRightTop = {
                   <span className="text-white block text-xl py-10">
                     {content.motive}
                   </span>
-                  <Link to='/design'><button
+                  <Link to='/design'><button onClick={()=>window.scrollTo(0, 0)}
                     className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                   >
                     {content.swiperButton}
@@ -111,7 +111,7 @@ const heroRightTop = {
                     <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50">
                     {heroRightTop.Content}
                     </p>
-                    <Link to='/design'><button
+                    <Link to='/design'><button onClick={()=>window.scrollTo(0, 0)}
                         className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                     >
                         {heroRightTop.Button}
@@ -132,7 +132,7 @@ const heroRightTop = {
                     <p className="text-3xl xs:text-5xl text-end font-['Italiana'] text-gray-50 z-10">
                     {heroRightTop.Content}
                     </p>
-                    <Link to='/design'><button
+                    <Link to='/design'><button onClick={()=>window.scrollTo(0, 0)}
                         className="uppercase combtn bg-white text-gray-700 w-52 h-12 mt-8 text-[14px] font-medium relative"
                     >
                         {heroRightTop.Button}

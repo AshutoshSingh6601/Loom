@@ -28,7 +28,7 @@ GRAB OR GONE
 <br /><br />
 CALL now For any QUERY
 <br /><br />
-<Link to='/contact'><button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#e1c89fad] text-gray-800'>CALL US</button></Link>
+<Link to='/contact' onClick={()=>window.scrollTo(0, 0)}><button className='bg-[#f1d9b7] px-5 py-1 rounded border border-[#e1c89fad] text-gray-800'>Call Us</button></Link>
 
                 </p>
             </div>

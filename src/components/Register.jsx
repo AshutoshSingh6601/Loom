@@ -20,17 +20,18 @@ const Register = ({register, setRegister}) => {
 
                 </div>
                     <form action="">
-                        {
-                            !login &&
-                        <div className="flex flex-col gap-1">
+                        
+                        <div className={`flex flex-col gap-1 ${login ? 'mb-5' : ''}`}>
                             <label className='ms-1' htmlFor="username">Username</label>
                             <input type="text" placeholder='Enter your Username' id='username' name='username' className='p-2 rounded-lg outline-none' />
                         </div>
-                        }
+                        {
+                            !login &&
                         <div className="flex flex-col my-5 gap-1">
                             <label className='ms-1' htmlFor="email">Email</label>
                             <input type="email" placeholder='Enter your email' id='email' name='email' className='p-2 rounded-lg outline-none' />
                         </div>
+                        }
                         <div className="flex flex-col gap-1">
                             <label className='ms-1' htmlFor="password">Password</label>
                             <input type="password" placeholder='Enter your password' id='password' name='password' className='p-2 rounded-lg outline-none' />

@@ -12,6 +12,8 @@ import Contact from "./components/Contact";
 import Register from "./components/Register";
 import NotFound from "./components/NotFound";
 import Experince from "./components/Experience";
+import Carts from "./components/Carts";
+import ProductState from "./context/ProductState";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -19,6 +21,7 @@ function App() {
 
   return (
     <>
+      <ProductState>
       <BrowserRouter>
         {showNav && <SSNav setShowNav={setShowNav} />}
         <Register register={register} setRegister={setRegister} />
@@ -30,11 +33,13 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sewers" element={<Experince />} />
+          <Route path="/cart" element={<Carts />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
         <Footer />
       </BrowserRouter>
+      </ProductState>
     </>
   );
 }
