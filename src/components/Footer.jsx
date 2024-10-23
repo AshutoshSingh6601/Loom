@@ -37,7 +37,7 @@ const Footer = () => {
 
       <div className="xs:flex items-center justify-between xs:text-base text-xs">
 
-      <p>&copy; Guddi Sahu </p>
+      <p>&copy; Ashutosh Singh </p>
 
       <div className="">
         <ul className='xs:flex mt-3 xs:mt-0 gap-5 '>
