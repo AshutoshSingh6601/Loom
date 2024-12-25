@@ -11,8 +11,8 @@ const DetailInfo = () => {
         <>
         {
         <div className='md:flex w-full md:h-screen md:mt-5'>
-            <div className="w-full h-full bg-[#d1c9bc] flex items-center justify-center px-10 py-8">
-                <p className=' w-10/12 text-gray-900'>
+            <div className="w-full h-full bg-[#d1c9bc] flex items-center justify-center xs:px-10 py-8">
+                <p className=' w-11/12 xs:w-10/12 text-gray-900'>
                 We'd like to announce that
 <br /><br />
 Don’t miss out on our limited-time offers for custom sewing services! Each piece is crafted with care and delivered right to your doorstep at an unbeatable price. Once they're gone, they're gone! Secure your order now and experience the perfect blend of quality and convenience. Act fast—your custom creation is just a click away!

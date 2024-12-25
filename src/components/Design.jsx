@@ -1,8 +1,10 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import productContext from "../context/ProductContext";
 
 const Design = () => {
   const { vendorDetails, setCartData, cartData } = useContext(productContext);
+
+  const [searchProduct, setSearchProduct] = useState('')
 
   const Categories = [
     {
@@ -23,28 +25,39 @@ const Design = () => {
   ];
 
   const handleProduct = (product) => {
-    console.log(vendorDetails.find((vendor) => vendor.name === product.name))
-    setCartData((prev)=> [...prev, vendorDetails.find((vendor) => vendor.name === product.name)])
+    const isProduct = cartData.find((vendor)=>vendor.name === product.name)
+    if(!isProduct){
+      setCartData((prev)=> [...prev, product])
+    }
+    
   };
-
 
   const [categoriesData, setCategoriesData] = useState([]);
   const activeClass = useRef("");
-  setTimeout(() => {
-    setCategoriesData(
-      vendorDetails.filter((category) =>
-        category.uni.toLowerCase().match(activeClass.current.toLowerCase())
-      )
-    );
-  });
+
+
   const handleCategory = (id) => {
     activeClass.current = id;
-    setCategoriesData(
-      vendorDetails.filter((category) =>
-        category.uni.toLowerCase().match(id.toLowerCase())
-      )
-    );
+    filterCategories();
   };
+
+  // Filter categories when searchProduct or activeClass changes
+  const filterCategories = () => {
+    const filteredData = vendorDetails.filter((category) => 
+      category.name.toLowerCase().includes(searchProduct.toLowerCase()) &&
+      category.uni.toLowerCase().match(activeClass.current.toLowerCase())
+    );
+    setCategoriesData(filteredData);
+  };
+
+  // useEffect to trigger filtering when searchProduct changes
+  useEffect(() => {
+    filterCategories();
+  }, [searchProduct]);
+
+  useEffect(() => {
+    filterCategories();
+  }, [activeClass.current]);
 
   return (
     <div>
@@ -58,9 +71,10 @@ const Design = () => {
           <span className="hidden xs:inline">
             As you navigate our collection, you'll discover everything from
             casual pieces to elegant attire, perfect for any occasion.
-          </span>{" "}
+          </span>
         </p>
         <div className="mx-auto w-10/12">
+        
           <div className="flex gap-5 md:gap-10 items-center justify-center my-10">
             {Categories.map((category) => (
               <button
@@ -75,9 +89,11 @@ const Design = () => {
               </button>
             ))}
           </div>
-
+          <div className="">
+          <input type="text" className="outline-none p-2 w-full md:w-96 rounded-xl border" placeholder="Search your design" value={searchProduct} onChange={(e)=>{setSearchProduct(e.target.value)}} />
+        </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-5">
-            {categoriesData.length &&
+            {categoriesData.length ?
               categoriesData.map((vendor, i) => (
                 <div key={i} className="">
                   <div className="h-[20rem] w-full border sm:h-h-[20rem] sm:w-full overflow-hidden rounded">
@@ -101,7 +117,10 @@ const Design = () => {
                     </button>
                   </div>
                 </div>
-              ))}
+              ))
+            :
+            'Please Enter valid design name'
+            }
           </div>
         </div>
         <p className="pb-10">

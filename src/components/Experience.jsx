@@ -1,4 +1,3 @@
-import React from 'react'
 import vendor1 from '../assets/Images/Vendor1.jpeg'
 import vendorPro1 from '../assets/Images/VerndorPro1.jpeg'
 import vendorPro2 from '../assets/Images/VerndorPro2.jpeg'
@@ -52,22 +51,22 @@ const Experince = () => {
             exp: '11'
         },
     ]
-
+    
   return (
     <>
      <div className="text-center mt-10 md:mb-5">
 
         <h2 className='text-5xl text-[#cd865c] font-["Italiana"]'>Experienced Sewers</h2>
-        <p className='w-2/3 mx-auto py-5'>At Loom, we pride ourselves on our extensive experience in the world of sewing. With years of passion and expertise behind us, we understand the intricacies of fabric, design, and technique. Our team of skilled sewists is dedicated to sharing this knowledge with you, offering guidance and support as you embark on your fashion style.</p>
+        <p className='w-2/3 mx-auto py-5'>At Loom, we pride ourselves on our extensive experience in the world of sewing. <span className="hidden sm:inline">With years of passion and expertise behind us, we understand the intricacies of fabric, design, and technique. Our team of skilled sewists is dedicated to sharing this knowledge with you, offering guidance and support as you embark on your fashion style.</span> </p>
 
-         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-10/12 mx-auto my-5 ">
-        {
-            vendorDetails.map((vendor, i)=>
-                <div key={i} className='flex flex-col items-center justify-center'>
-                    <img src={vendor.Image} alt="" className='h-[8rem] w-[8rem] border border-[#38444d] sm:h-[12rem] sm:w-[12rem] object-cover object-left-top rounded-full'  />
+         <div className="grid grid-cols-2 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 w-10/12 mx-auto my-5 ">
+        {vendorDetails &&
+            vendorDetails.map((vendor)=>
+                <div key={vendor.id} className='flex flex-col items-center justify-center'>
+                    <img src={`${vendor.Image}`} alt={vendor.name} className='h-[8rem] w-[8rem] border border-[#38444d] sm:h-[12rem] sm:w-[12rem] object-cover object-left-top rounded-full'  />
                     <div className="text-left ps-3">
-                    <p><span className='font-bold'>Name: </span> {vendor.name} </p>
-                    <p><span className='font-bold'>Experience: </span> {vendor.exp} years </p>
+                    <p className='text-xs xs:text-base'><span className='font-bold text-sm xs:text-base'>Name: </span> {vendor.name} </p>
+                    <p className='text-xs xs:text-base'><span className='font-bold text-sm xs:text-base'>Experience: </span> {vendor.experience} years </p>
                     </div>
                 </div>
             )
